@@ -22,14 +22,14 @@ header {
 
 .logo{
     text-decoration: none;
-    color: #3a6cf4;
+    color: #062d99;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.8em;
 }
 
 .navigation a{
-    color: #3a6cf4;
+    color: #062d99;
     text-decoration: none;
     font-size: 1.1em;
     font-weight: 500;
@@ -37,7 +37,7 @@ header {
 }
 
 .navigation a:hover{
-    color: #601cfc;
+    color: #000000;
 }
 
 section {
@@ -47,7 +47,7 @@ section {
 .main {
     width: 100%;
     min-height: 100vh;
-    background: #014727;
+    background: url(images/v1016-b-09.jpg) no-repeat;
     display: flex;
     align-items: center;
     background-size: cover;
@@ -56,7 +56,7 @@ section {
 }
 
 .main h2 {
-    color: #00ff62;
+    color: #ffffff;
     font-size: 1.4em;
     font-weight: 500;
 }
@@ -64,13 +64,13 @@ section {
 .main h2 span {
     display: inline-block;
     margin-top: 10px;
-    color: #ffffff;
+    color: #473bf3;
     font-size: 3em;
     font-weight: 600;
 }
 
 .main h3 {
-    color: #00ff40;
+    color: #ffffff;
     font-size: 2em;
     font-weight: 700;
     letter-spacing: 1px;
@@ -78,30 +78,8 @@ section {
     margin-bottom: 30px;
 }
 
-.main-btn {
-    color: #fff;
-    background-color: #3a6cf4;
-    text-decoration: none;
-    font-size: 1.1em;
-    font-weight: 600;
-    display: inline-block;
-    padding: 0.9375em 2.1875em;
-    letter-spacing: 1px;
-    border-radius: 15px;
-    margin-bottom: 40px;
-    transition: 0.7s ease;
-}
 
-.main-btn:hover {
-    background-color: #0a49f6;
-    transform: scale(1.1);
-}
 
-.social-icons a {
-    color: #000000;
-    font-size: 1.7em;
-    padding-right: 30px;
-}
 
 .title {
     display: flex;
@@ -134,7 +112,7 @@ section {
 }
 
 .card .icon {
-    color: #ff0808ab;
+    color: #5e41ff;
     font-size: 8em;
     text-align: center;
 }
@@ -233,7 +211,7 @@ section {
 }
 
 .footer-title span {
-    color: #7bff00;
+    color: #5e41ff;
 }
 
 .footer .social-icons a{
@@ -284,12 +262,5 @@ section {
 
     .main-content h3{
         font-size: 1.4em;
-    }
-}
-
-@media (max-width:300px){
-    body{
-        font-size: 10px;
-     
     }
 }
