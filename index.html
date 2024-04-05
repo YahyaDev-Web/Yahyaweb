@@ -20,11 +20,15 @@
 </script>
 </head>
 <body>
+</head>
+<body>
     <header>
         <a href="#" class="logo">YahyaDev</a>
         <nav class="navigation">
             <a href="#services">Services</a>
             <a href="#contact">Contact</a>
+            <a href="#" onclick="setLanguage('ar')">العربية</a>
+            <a href="#" onclick="setLanguage('de')">Deutsch</a>
         </nav>
     </header>
 
@@ -99,5 +103,19 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TG3SNWNX"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
+    <script>
+        function setLanguage(language) {
+            if (language === 'de') {
+                window.location.href = 'deindex.html'; // Redirect to the German version
+            } else if (language === 'ar') {
+                window.location.href = 'arindex.html'; // Redirect to the Arabic version
+            } else {
+                // Redirect to the default version or any other language-specific version
+                window.location.href = 'index.html'; // Assuming index.html is your default version
+            }
+        }
+    </script>
+    
+    
 </body>
 </html>
