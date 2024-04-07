@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" type="x-icon" href="images/Logo.jpg">
     <title>Yahya Dev</title>
-    <!-- Google tag (gtag.js) -->
+    <!-- Google Tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-N26NW1ZG1M"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -21,10 +21,17 @@
 </head>
 <body>
     <header>
-        <a href="#" class="logo">Yahya Dev</a>
+        <a href="#" class="logo">يحيى ديف</a>
         <nav class="navigation">
             <a href="#services">عني</a>
             <a href="#contact">الاتصال</a>
+            <div class="language-tab" onclick="toggleLanguages()">
+                اللغة
+                <div class="language-options" id="languageOptions">
+                    <button onclick="setLanguage('en')">الانجليزية</button>
+                    <button onclick="setLanguage('ar')">العربية</button>
+                    <button onclick="setLanguage('de')">الالمانية</button>
+                </div>
         </nav>
     </header>
 
@@ -91,7 +98,38 @@
             </div>
         </div>
     </section>
+    <script>
+        function setLanguage(language) {
+            if (language === 'de') {
+                window.location.href = 'deindex.html'; // Redirect to the German version
+            } else if (language === 'ar') {
+                window.location.href = 'arindex.html'; // Redirect to the Arabic version
+            } else {
+                // Redirect to the default version or any other language-specific version
+                window.location.href = 'index.html'; // Assuming index.html is your default version
+            }
+        }
+        function toggleLanguages() {
+    var options = document.getElementById("languageOptions");
+    if (options.style.display === "none") {
+        options.style.display = "block";
+    } else {
+        options.style.display = "none";
+    }
+}
 
+function setLanguage(language) {
+    if (language === 'de') {
+        window.location.href = 'deindex.html'; // Redirect to the German version
+    } else if (language === 'ar') {
+        window.location.href = 'arindex.html'; // Redirect to the Arabic version
+    } else {
+        // Redirect to the default version or any other language-specific version
+        window.location.href = 'index.html'; // Assuming index.html is your default version
+    }
+}
+
+    </script>
     <footer class="footer">
         <p class="footer-title">حقوق الطبع © <span>يحيى ديف</span></p>
     </footer>
