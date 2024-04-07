@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+* {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth; 
+    scroll-behavior: smooth;
 }
-
 
 header {
     background-color: #f0f0f0;
@@ -17,10 +16,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 200px ;
+    padding: 10px 200px;
 }
 
-.logo{
+.logo {
     text-decoration: none;
     color: #062d99;
     text-transform: uppercase;
@@ -28,7 +27,12 @@ header {
     font-size: 1.8em;
 }
 
-.navigation a{
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.navigation a {
     color: #062d99;
     text-decoration: none;
     font-size: 1.1em;
@@ -36,11 +40,49 @@ header {
     padding-left: 30px;
 }
 
-.navigation a:hover{
+.navigation a:hover {
     color: #000000;
 }
 
-section {
+.language-tab {
+    font-size: 1.1em;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    margin-left: 20px; /* Adjusted margin to separate it from other navigation links */
+    color:#062d99
+}
+.language-tab:hover a{
+    color: #000000; /* Change to the desired color */
+}
+.language-options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f0f0f0; /* Changed background color to match navigation background */
+    border: 1px solid #ccc;
+    border-top: none;
+    z-index: 1;
+}
+.language-tab:active {
+    color: #000; /* Change to the desired color */
+}
+
+
+.language-options button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    border: none;
+    background-color: transparent;
+}
+.language-options button:hover {
+    background-color: #c7c7c7; /* Changed hover background color */
+}
+
+.section {
     padding: 100px 200px;
 }
 
@@ -77,9 +119,6 @@ section {
     margin-top: 10px;
     margin-bottom: 30px;
 }
-
-
-
 
 .title {
     display: flex;
@@ -121,7 +160,7 @@ section {
     text-align: center;
 }
 
-.info h3{
+.info h3 {
     color: #000000;
     font-size: 1.2em;
     font-weight: 700;
@@ -132,7 +171,7 @@ section {
     background-color: #ffffff;
 }
 
-.projects .content{
+.projects .content {
     margin-top: 30px;
 }
 
@@ -148,14 +187,14 @@ section {
 }
 
 .project-card:hover {
-   transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .project-card:hover .project-image {
     opacity: 0.9;
- }
+}
 
-.project-image img{
+.project-image img {
     width: 100%
 }
 
@@ -185,7 +224,7 @@ section {
     color: #601cfc;
 }
 
-.contact .icon{
+.contact .icon {
     font-size: 4.5em;
 }
 
@@ -214,53 +253,53 @@ section {
     color: #5e41ff;
 }
 
-.footer .social-icons a{
+.footer .social-icons a {
     font-size: 1.3em;
     padding: 0 12px 0 0;
 }
 
-@media (max-width:1023px){
-    header{
+@media (max-width:1023px) {
+    header {
         padding: 12px 20px;
     }
 
-    .navigation a{
+    .navigation a {
         padding-left: 10px;
     }
 
-    .title{
+    .title {
         font-size: 1.8em;
     }
 
-    section{
+    section {
         padding: 80px 20px;
     }
 
-    .main-content h2{
+    .main-content h2 {
         font-size: 1em;
     }
 
-    .main-content h3{
+    .main-content h3 {
         font-size: 1.6em;
     }
 
-    .content{
+    .content {
         flex-direction: column;
         align-items: center;
     }
 
 }
 
-@media (max-width:641px){
-    body{
+@media (max-width:641px) {
+    body {
         font-size: 12px;
     }
 
-    .main-content h2{
+    .main-content h2 {
         font-size: 0.8em;
     }
 
-    .main-content h3{
+    .main-content h3 {
         font-size: 1.4em;
     }
 }
