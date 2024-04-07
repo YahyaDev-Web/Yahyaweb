@@ -8,8 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" type="x-icon" href="images/Logo.jpg">
-    <title>YahyaDev</title>
-    <!-- Google tag (gtag.js) -->
+    <title>Yahya Dev</title>
+    <!-- Google Tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-N26NW1ZG1M"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -23,15 +23,22 @@
     <header>
         <a href="#" class="logo">YahyaDev</a>
         <nav class="navigation">
-            <a href="#services">Dienstleistungen</a>
+            <a href="#services">Über Mich</a>
             <a href="#contact">Kontakt</a>
+            <div class="language-tab" onclick="toggleLanguages()">
+                Sprache
+                <div class="language-options" id="languageOptions">
+                    <button onclick="setLanguage('en')">Englisch</button>
+                    <button onclick="setLanguage('ar')">Arabisch</button>
+                    <button onclick="setLanguage('de')">Deutsch</button>
+                </div>
         </nav>
     </header>
 
     <section class="main">
         <div>
-            <h2>Hallo, ich bin YahyaDev<br><span>Entwickler</span></h2>
-            <h3>Ich bin ein Schüler, Entwickler und Designer aus Marokko.</h3>
+            <h2>Willkommen, Ich bin Yahya Dev<br><span>Entwickler</span></h2>
+            <h3>Ich bin ein Schüler, Entwickler und Designer aus Marokko</h3>
         </div>
     </section>
 
@@ -44,7 +51,7 @@
                 </div>
                 <div class="info">
                     <h3>Programmierung</h3>
-                    <p>Ich bin ein Python-Entwickler. Ich kann einfache Apps erstellen. Ich lerne noch das Programmieren.</p>
+                    <p>Ich kann einfache Anwendungen erstellen, lerne aber immer noch programmieren</p>
                 </div>
             </div>
             <div class="card">
@@ -53,7 +60,7 @@
                 </div>
                 <div class="info">
                     <h3>Sprachen</h3>
-                    <p>Ich spreche Arabisch, Französisch und Englisch.</p>
+                    <p>Ich spreche Arabisch, Französisch und Englisch</p>
                 </div>
             </div>
             <div class="card">
@@ -62,14 +69,14 @@
                 </div>
                 <div class="info">
                     <h3>Alter</h3>
-                    <p>Ich bin 14 Jahre alt.</p>
+                    <p>Ich bin vierzehn Jahre alt</p>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="cards contact" id="contact">
-        <h2 class="title">Lass uns Zusammenarbeiten</h2>
+        <h2 class="title">Lass uns zusammenarbeiten</h2>
         <div class="content">
             <div class="card" style="height: 250px;">
                 <div class="icon">
@@ -91,9 +98,40 @@
             </div>
         </div>
     </section>
+    <script>
+        function setLanguage(language) {
+            if (language === 'de') {
+                window.location.href = 'deindex.html'; // Redirect to the German version
+            } else if (language === 'ar') {
+                window.location.href = 'arindex.html'; // Redirect to the Arabic version
+            } else {
+                // Redirect to the default version or any other language-specific version
+                window.location.href = 'index.html'; // Assuming index.html is your default version
+            }
+        }
+        function toggleLanguages() {
+    var options = document.getElementById("languageOptions");
+    if (options.style.display === "none") {
+        options.style.display = "block";
+    } else {
+        options.style.display = "none";
+    }
+}
 
+function setLanguage(language) {
+    if (language === 'de') {
+        window.location.href = 'deindex.html'; // Redirect to the German version
+    } else if (language === 'ar') {
+        window.location.href = 'arindex.html'; // Redirect to the Arabic version
+    } else {
+        // Redirect to the default version or any other language-specific version
+        window.location.href = 'index.html'; // Assuming index.html is your default version
+    }
+}
+
+    </script>
     <footer class="footer">
-        <p class="footer-title">Urheberrecht © <span>YahyaDev</span></p>
+        <p class="footer-title">Urheberrecht © <span>Yahya Dev</span></p>
     </footer>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TG3SNWNX"
