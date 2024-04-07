@@ -91,10 +91,14 @@ header {
     min-height: 100vh;
     background: url(images/v1016-b-09.jpg) no-repeat;
     display: flex;
+    justify-content: center; /* Center horizontally */
     align-items: center;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+}
+.main div {
+    text-align: center; /* Center the text inside the div */
 }
 
 .main h2 {
